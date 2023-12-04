@@ -18,10 +18,7 @@ var1 = '5 4'
 var2 = '1 3 5 7 9' 
 var3 = '2 3 4 5' 
           
-st1 = set(var2.split())
-st2 = set(var3.split())
-res_st = set(var2.split()) & set(var3.split())
-res_list = list(res_st)
-res_list1 = res_list.sort()
-for num in res_list1: 
+res_list = list(set(var2.split()) & set(var3.split()))
+res_list.sort()
+for num in res_list: 
     print(num, end=' ')
