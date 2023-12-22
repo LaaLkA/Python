@@ -37,10 +37,6 @@ friends = set()
 for number in range(k + 1):
         if get_divisors_sum(get_divisors_sum(number)) == number and get_divisors_sum(number) != number:
                 friends.add(tuple(sorted((number, get_divisors_sum(number)))))
-        else: 
-                print('Дружественных чисел нет!')
-                break
-        print(f'Дружественные числа: ')
-
+print(f'Дружественные числа: ')
 for a, b in friends:
         print(a, b)
